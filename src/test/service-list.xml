@@ -1,0 +1,1693 @@
+<sm:serviceList xmlns:sm="http://www.vw.com/mbb/serviceManagement">
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_osp" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767645</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/carapp_osp/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="mbboauth_v1" sm:serviceType="mbbEssential" sm:termsAndConditionsRequired="false">
+        <sm:url>https://digestazsrun-3a.app.eu.dp.vwg-connect.com/mbbcoauth/t1/oauth2/v1/$(resource)?brand=Audi</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="requestToken" rol:version="1">
+            <rol:invocationUrl>https://digestazsrun-3a.app.eu.dp.vwg-connect.com/mbbcoauth/t1/oauth2/v1/requestToken/$(resource)?brand=Audi&amp;homeRegion=ICTO-25343</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="revoke" rol:version="1">
+            <rol:invocationUrl>https://digestazsrun-3a.app.eu.dp.vwg-connect.com/mbbcoauth/t1/oauth2/v1/revoke/revoke?brand=Audi&amp;homeRegion=ICTO-25343</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="olb_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://graphql.approval.connectfleet.io/graphql</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="lgi_download_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767662</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://eu.tpeg-set.cit.hybrid.cc.api.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>lgi_upload_v3</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="nc_destsync_v2" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T2x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767659</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://csm.cit.cc.api.here.com/sync/v1/sync</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="true" sm:serviceId="spin_v2" sm:serviceType="mbbInternal" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Disabled">
+            <sm:reason>primaryUserNotVerified</sm:reason>
+        </sm:serviceStatus>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="rsd_v1" sm:serviceType="app" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>dormantService</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="onlinespeech_v2" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://{ESOCLOUD}/tc-voicerouter/v2/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767660</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://{ESOCLOUD}/tc-voicerouter/v2/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>alexastreamingdata_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>carapp_alexa</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="kundenupdate_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>dormantService</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="services_v1" sm:serviceType="mbbEssential" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/services/v1/$(checksum)</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="downloadSL" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/services/v1/downloadSL/$(checksum)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="uploadIB" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/services/v1/uploadIB/$(checksum)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="onlineradiodata_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808962</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://{ESOCLOUD}/onlineradio/v1/car/onlineradioNFO.php</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="lgi_upload_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767638</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="carapp_disclaimer" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_disclaimer/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>dormantService</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="dataplan_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="vehicles_v1" sm:serviceType="mbbEssential" sm:termsAndConditionsRequired="false">
+        <sm:url>https://mod3digestmbbreg-3a.app.eu.dp.vwg-connect.com/mbb/vehicles/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="registration" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbreg-3a.app.eu.dp.vwg-connect.com/mbb/vehicles/v1/registration/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="otacunavp_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767648</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://amum.cit.cc.api.here.com/amum/sparta-cit/eu</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="vehicleinventory_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleinventory/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="primaryuser_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/devicereset/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281235Z</lm:activation>
+            <lm:expires>202107281235Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767738</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281235Z</lm:activation>
+            <lm:expires>202107281235Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="nominated" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/primaryuser/v1/nominated/$(portalUser)/$(challenge)/$(f-pin-hash)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="fpinChallenge" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/primaryuser/v1/fpinChallenge/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="hybridradiorange_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808967</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://{ESOCLOUD}/hybridradio/v1/car/hybridradioNFO.php</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+            <sm:depID>hybridradiodata_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="osp_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767658</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://audi.parkopedia.com/api/tpeg/initsession/?cid=audi_mib3_70277&amp;apiver=25&amp;radius=500</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>osp_upload_v1</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>carapp_osp</sm:depID>
+            <sm:depID>imageservice_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="userinfo_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T2x" sm:scope="n/a"/>
+        <sm:url>https://qa.retailservices.audi.de:20443/iup/v1/userinfo</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://tui-id.audi.com/v1/userinfo</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_dataplan" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767637</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_dataplan/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+            <sm:depID>dataplan_volume_v1</sm:depID>
+            <sm:depID>dataplan_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="trafficlightsinfo_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://ece-aiorun-3a.app.eu.dp.vwg-connect.com/tlin/vehicle/v1/trafficlightsinfo/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767644</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://ece-aiorun-3a.app.eu.dp.vwg-connect.com/tlin/vehicle/v1/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="datacollectorconf_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/datacollectorconf/v1/$(action)?status=$(status)&amp;configID=$(configID)</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="confDownload" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/datacollectorconf/v1/confDownload/$(action)?status=$(status)&amp;configID=$(configID)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>anonymousDataNoGPS</sm:privacyGroup>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="apprepo_v2" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/apprepo/v2/DEFAULT/?cluster=clu$(cluster)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="true" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="lsd_v1" sm:serviceType="mbbInternal" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767632</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="localServiceState" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/lsd/v1/localServiceState/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>anonymousDataNoGPS</sm:privacyGroup>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="uota_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="vetoAdvice" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota/v1/vetoAdvice/campaign/$(ID)/version/$(VERSION)/vetoAdvice?vc=$(VC_HASH)&amp;lang=$(LANG)&amp;timestamp=$(VEHICLE_TIMESTAMP)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="status" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota/v1/status/campaign/$(ID)/version/$(VERSION)/status?vc=$(VC_HASH)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="result" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota/v1/result/campaign/$(ID)/version/$(VERSION)/result?vc=$(VC_HASH)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="advice" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota/v1/advice/campaign/$(ID)/version/$(VERSION)/advice?vc=$(VC_HASH)&amp;lang=$(LANG)&amp;timestamp=$(VEHICLE_TIMESTAMP)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>vehicleConf_v1</sm:depID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>uota_url_v1</sm:depID>
+            <sm:depID>uota_download_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="osp_upload_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767635</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="dataplan_volume_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/dataplan_volume/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="datacollectorctrl_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>anonymousDataNoGPS</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>datacollectorconf_v1</sm:depID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_onlineradio" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808963</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/carapp_onlineradio/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="gracenote_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808965</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/gracenote/v1//gracenote/v1/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="carapp_license" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_license/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_license/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="idp_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T2x" sm:scope="n/a"/>
+        <sm:url>https://qa.retailservices.audi.de:20443/mib2plus/v1/login</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="userInfo" rol:version="1">
+            <rol:invocationUrl>https://pre-id.audi.com/idk/userinfo</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="tokenExchangeUserLogin" rol:version="1">
+            <rol:invocationUrl>https://identity-sandbox.vwgroup.io/oidc/v1/token</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="accountManagement" rol:version="1">
+            <rol:invocationUrl>https://pre-id.audi.com/v1/userinfo</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="checkProfileIntegrity" rol:version="1">
+            <rol:invocationUrl>https://profileintegrityservice-approval.apps.emea.vwapps.io/iaa/pic/v1/users/$(ssoId)/check-profile</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="tokenExchangeBadgeProfile" rol:version="1">
+            <rol:invocationUrl>https://identity-sandbox.vwgroup.io/oidc/v1/token</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="clientId" rol:version="1">
+            <rol:invocationUrl>https://uuid-carnetid-mappingservice-sandbox.apps.emea.vwapps.io/services/ocuclientservice/v1</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="tokenExchangeUserProfile" rol:version="1">
+            <rol:invocationUrl>https://identity-sandbox.vwgroup.io/oidc/v1/token</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="userLogin" rol:version="1">
+            <rol:invocationUrl>https://identity-sandbox.vwgroup.io/carnet-facade/v1/as/token.oauth2</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="login" rol:version="1">
+            <rol:invocationUrl>https://identity-sandbox.vwgroup.io/oidc/v1/token</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="citymodels_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767656</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://here-rich3dcities-1.catalogs.datastore.cc.api.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="poiaggregator_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://poiag-1a.app.ece.vwg-connect.com/?fuelType=$(fuelType)</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767655</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://poiag-1a.app.ece.vwg-connect.com/?fuelType=$(fuelType)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>carapp_dopi</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>imageservice_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_googlepoi" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767633</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_google/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>imageservice_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="vzo_upload_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767636</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="satellitemaps_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767652</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://osps.cit.cc.data.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="traffic-online-plus_v4" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767646</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://eu.tpeg-set.cit.hybrid.cc.api.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>traffic_upload_v4</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="vehicleConf_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleConfiguration/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="hash" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleConfiguration/v1/hash/$(hash)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="vehicleConf" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleConfiguration/v1/vehicleConf/$(hash)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="carapp_onlinemanuals" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_onlinemanuals/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="uota_url_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota_url/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="packages" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/uota_url/v1/packages/campaign/$(ID)/version/$(VERSION)/packages?vc=$(VC_HASH)&amp;timestamp=$(VEHICLE_TIMESTAMP)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_olb" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767734</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_olb/v1/DEFAULT/sc1:inf_a_t1</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+            <sm:depID>olb_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="hybridradiodata_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808966</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://{ESOCLOUD}/hybridradio/v1/car/hybridradioNFO.php</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="xfcd_upload_v2" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767653</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://td2-prelive.eu.acdc.swarm.audi/xfcd_upload/v2/$(action)?serviceType=$(serviceType)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="mond_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767657</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://tui2-mbbservices04.audi-connect.de/mbb</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="imageservice_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/imageservice/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_mond" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767661</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="hotspotwlan_v1" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="mond_applemusic_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1808964</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mond_v1</sm:depID>
+            <sm:depID>carapp_mond</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="mond_amazonmusic_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767642</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>2</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+            <sm:depID>mond_v1</sm:depID>
+            <sm:depID>carapp_mond</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_dopi" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767643</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_dopi/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="updatetruststore_v2" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="certificateupdateresult" rol:version="1">
+            <rol:invocationUrl>http://mbbc-85801-disp-val-xinternal:8080/mbb</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://{ESOCLOUD}/certexchange/v1/service.php</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="traffic_upload_v4" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767651</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="vzo_download_v3" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767650</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://here-roadsigns-sparta-cit-eu-01.catalogs.datastore.api.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vzo_upload_v3</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="carapp_calendar" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>dormantService</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="presence_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_news" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_news/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767634</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_news/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>imageservice_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="traffic-online_v4" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767639</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://eu.tpeg-set.cit.hybrid.cc.api.here.com</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>xfcd_upload_v2</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>traffic_upload_v4</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="vehicleusers_v2" sm:serviceType="mbb" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:url>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281235Z</lm:activation>
+            <lm:expires>202107281235Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767743</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281235Z</lm:activation>
+            <lm:expires>202107281235Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="setIsInVehicle" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/setIsInVehicle/users/$(user)/isInVehicle</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="removeIsInVehicle" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/removeIsInVehicle/users/$(user)/isInVehicle</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="readVehicleUserList" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/readVehicleUserList/</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="readUserData" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/readUserData/users/$(user)</rol:invocationUrl>
+        </rol:operation>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="deleteUser" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/vehicleusers/v2/deleteUser/users/$(user)</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="mqttwakeup_v1" sm:serviceType="vehicleOnly" sm:termsAndConditionsRequired="false">
+        <sm:serviceStatus sm:status="Enabled"/>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="false" sm:primaryUserRequired="false" sm:serviceId="uota_download_v1" sm:serviceType="external" sm:termsAndConditionsRequired="false">
+        <sm:url>https://download-approval.audi.com/uota_download/v1/</sm:url>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="files" rol:version="1">
+            <rol:invocationUrl>https://download-approval.audi.com/uota_download/v1/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>personalUser</sm:privacyGroup>
+        </sm:privacyGroups>
+    </sm:service>
+    <sm:service sm:blocksDisabling="false" sm:licenseRequired="true" sm:primaryUserRequired="false" sm:serviceId="carapp_weather" sm:serviceType="webApp" sm:termsAndConditionsRequired="false">
+        <sm:authentication sm:authLevel="T1x" sm:scope="n/a"/>
+        <sm:serviceStatus sm:status="Enabled"/>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>0</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <lm:license xmlns:lm="http://www.vw.com/mbb/licenseManagement">
+            <lm:id>1767649</lm:id>
+            <lm:ltype>dealer</lm:ltype>
+            <lm:state>activated</lm:state>
+            <lm:activation>202001281231Z</lm:activation>
+            <lm:expires>202107281231Z</lm:expires>
+            <lm:warn>false</lm:warn>
+        </lm:license>
+        <rol:operation xmlns:rol="http://www.vw.com/mbb/rolesAndRights" rol:id="DEFAULT" rol:version="1">
+            <rol:invocationUrl>https://mod3digestmbbrun-3a.app.eu.dp.vwg-connect.com/mbb/ca_weather/v1/DEFAULT/</rol:invocationUrl>
+        </rol:operation>
+        <sm:dirt>
+            <sm:APN>1</sm:APN>
+        </sm:dirt>
+        <sm:privacyGroups>
+            <sm:privacyGroup>pseudonymousGps</sm:privacyGroup>
+        </sm:privacyGroups>
+        <sm:dependentServiceID>
+            <sm:depID>updatetruststore_v2</sm:depID>
+            <sm:depID>mqttwakeup_v1</sm:depID>
+            <sm:depID>services_v1</sm:depID>
+            <sm:depID>vehicles_v1</sm:depID>
+            <sm:depID>idp_v1</sm:depID>
+            <sm:depID>vehicleinventory_v1</sm:depID>
+            <sm:depID>presence_v1</sm:depID>
+            <sm:depID>mbboauth_v1</sm:depID>
+        </sm:dependentServiceID>
+    </sm:service>
+</sm:serviceList>

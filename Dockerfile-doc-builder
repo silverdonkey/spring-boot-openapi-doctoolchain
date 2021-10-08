@@ -1,0 +1,18 @@
+FROM openjdk:8-jre-alpine
+
+# configure system
+RUN apk update
+RUN apk add --no-cache bash vim git graphviz fontconfig fontconfig-dev msttcorefonts-installer ttf-dejavu
+
+ARG DOC_TOOLCHAIN_HOME=/tmp/docToolchain
+
+RUN git clone --recursive https://github.com/docToolchain/docToolchain.git ${DOC_TOOLCHAIN_HOME}
+RUN cd ${DOC_TOOLCHAIN_HOME} && rm -rf .git && rm -rf resources/asciidoctor-reveal.js/.git && rm -rf resources/reveal.js/.git
+
+ENV PATH "${DOC_TOOLCHAIN_HOME}/bin:$PATH"
+
+RUN echo $PATH
+
+RUN cd ${DOC_TOOLCHAIN_HOME} && ./gradlew init && ./gradlew wrapper
+
+
