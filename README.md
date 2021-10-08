@@ -41,7 +41,7 @@ Preconditions:
 * Confluence credentials with R/W-access
 
 Then from your command line run the command: 
-`docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+* `docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
 
 ### Maven Reference Documentation
 For further reference, please consider the following sections:
