@@ -1,4 +1,4 @@
-# DemoIntegrated docToolchain 
+# Demo Integrated docToolchain 
 
 This demo project consist of
 * Spring Boot Service
