@@ -34,7 +34,12 @@ From your command line:
 * `docker build --no-cache . -t builder-alpine-doctoolchain:2.0.0 -f Dockerfile-doc-builder`
 
 ### Run docToolchain-publishToConfluence locally using Docker (builder-alpine-doctoolchain:2.0.0 image)
-* `docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+Preconditions: 
+* the directory under `/full-path-to-your-service-repo` must contain a valid docToolchain Config.groovy
+* Confluence credentials with R/W-access
+
+Then from your command line run the command: 
+`docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
 
 ### Maven Reference Documentation
 For further reference, please consider the following sections:
