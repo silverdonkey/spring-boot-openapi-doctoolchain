@@ -1,23 +1,20 @@
 # Demo Integrated docToolchain 
 
 This demo project consist of
-* Spring Boot Service
-* OpenJDK-1.8
-* Maven 3.8.3
-* OpenAPI Definition
-* Asciidoc API documentation
-* Config for [docToolchain](https://doctoolchain.github.io/docToolchain/)
-* Docker images for the Spring-Boot-Service and docToolchain 
+* Spring Boot (v2.4.5) Service (OpenJDK-1.8, Maven 3.8.3)
+* OpenAPI Definition `src/docs/service-api.yaml`
+* Asciidoc API documentation `src/docs`
+* Config (`Config.groovy`) for [docToolchain](https://doctoolchain.github.io/docToolchain/)
+* Docker images for the Spring-Boot-Service and baked-in docToolchain 
 
 Using the builder-alpine-doctoolchain image you can generate and publish your documentation (Asciidoc format) and OpenAPI-Definitions (yaml or json format) to Confluence.
 
-The Result in Confluence looks like this: 
-![Screenshot-Confluence-OpenApi](https://user-images.githubusercontent.com/22856759/136581958-35fd6b34-0f7c-492c-a2ce-edbf2c121f22.png)
+The result in [Confluence](https://nikonfluence.atlassian.net/l/c/wLy4m800)
 
+The result as screenshot: ![](src/docs/images/Screenshot-Confluence-OpenApi.png)
 
 ### Build and Run the Spring-Boot service locally with Maven
 From your command line:
-
 * `mvn clean verify`
 * `mvn spring-boot:run`
 * then open your browser and go to http://localhost:8080/entity/all
