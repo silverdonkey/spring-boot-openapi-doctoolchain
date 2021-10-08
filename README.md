@@ -3,9 +3,9 @@
 This demo project consist of
 * Spring Boot (v2.4.5) Service (OpenJDK-1.8, Maven 3.8.3)
 * OpenAPI definition for the Spring Boot Service `src/docs/service-api.yaml` 
-* Asciidoc API documentation `src/docs/service-api.adoc` which for the OpenAPI (yaml)  definition
+* Asciidoc API documentation `src/docs/service-api.adoc` includes the OpenAPI (yaml) definition
 * OpenAPI definition for the Petstore example service to demonstrate the JSON format `src/docs/petstore-api.json`
-* Asciidoc API documentation `src/docs/petstore-api.adoc` which for the OpenAPI (json) definition
+* Asciidoc API documentation `src/docs/petstore-api.adoc` includes the OpenAPI (json) definition
 * Config (`Config.groovy`) for [docToolchain](https://doctoolchain.github.io/docToolchain/)
 * Dockerfiles for the Spring-Boot-Service and baked-in docToolchain 
 
