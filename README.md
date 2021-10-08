@@ -7,9 +7,11 @@ This demo project consist of
 * Config (`Config.groovy`) for [docToolchain](https://doctoolchain.github.io/docToolchain/)
 * Docker images for the Spring-Boot-Service and baked-in docToolchain 
 
-Using the builder-alpine-doctoolchain image you can generate and publish your documentation (Asciidoc format) and OpenAPI-Definitions (yaml or json format) to Confluence.
+### My own Confluence instance 'nikonfluence'
+The result is visible on my own [Confluence instance](https://nikonfluence.atlassian.net).
 
-The result in [Confluence](https://nikonfluence.atlassian.net/l/c/wLy4m800)
+Using the builder-alpine-doctoolchain image you can generate and publish your documentation (Asciidoc format) and OpenAPI-Definitions (yaml or json format) to Confluence.
+Her is the result in [Confluence](https://nikonfluence.atlassian.net/l/c/wLy4m800)
 
 The result as screenshot: ![](src/docs/images/Screenshot-Confluence-OpenApi.png)
 
@@ -33,7 +35,6 @@ From your command line:
 
 ### Run docToolchain-publishToConfluence locally using Docker (builder-alpine-doctoolchain:2.0.0 image)
 * `docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
-
 
 ### Maven Reference Documentation
 For further reference, please consider the following sections:
