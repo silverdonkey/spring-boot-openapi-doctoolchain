@@ -2,10 +2,12 @@
 
 This demo project consist of
 * Spring Boot (v2.4.5) Service (OpenJDK-1.8, Maven 3.8.3)
-* OpenAPI Definition `src/docs/service-api.yaml`
-* Asciidoc API documentation `src/docs`
+* OpenAPI definition for the Spring Boot Service `src/docs/service-api.yaml` 
+* Asciidoc API documentation `src/docs/service-api.adoc` which for the OpenAPI (yaml)  definition
+* OpenAPI definition for the Petstore example service to demonstrate the JSON format `src/docs/petstore-api.json`
+* Asciidoc API documentation `src/docs/petstore-api.adoc` which for the OpenAPI (json) definition
 * Config (`Config.groovy`) for [docToolchain](https://doctoolchain.github.io/docToolchain/)
-* Docker images for the Spring-Boot-Service and baked-in docToolchain 
+* Dockerfiles for the Spring-Boot-Service and baked-in docToolchain 
 
 ### My own Confluence instance 'nikonfluence'
 The result is visible on my own [Confluence instance](https://nikonfluence.atlassian.net).
@@ -29,7 +31,7 @@ From your command line:
 * * go to http://localhost:8080/entity/all
 
 * Dockerfile-doc-builder: 
-* * uses openjdk:8-jre-alpine and docToolchain 2.x for building an image. 
+* * uses openjdk:8-jre-alpine and docToolchain 2.x 
 * * installs libs to allow generating and publishing PlantUML diagrams 
 * `docker build --no-cache . -t builder-alpine-doctoolchain:2.0.0 -f Dockerfile-doc-builder`
 
