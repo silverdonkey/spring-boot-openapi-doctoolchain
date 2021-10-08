@@ -11,6 +11,10 @@ This demo project consist of
 
 Using the builder-alpine-doctoolchain image you can generate and publish your documentation (Asciidoc format) and OpenAPI-Definitions (yaml or json format) to Confluence.
 
+The Result in Confluence looks like this: 
+![Screenshot-Confluence-OpenApi](https://user-images.githubusercontent.com/22856759/136581958-35fd6b34-0f7c-492c-a2ce-edbf2c121f22.png)
+
+
 ### Build and Run the Spring-Boot service locally with Maven
 From your command line:
 
