@@ -43,6 +43,12 @@ Preconditions:
 Then from your command line run the command: 
 * `docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
 
+### Run docToolchain-publishToConfluence locally using docToolchain's own Docker image (rdmueller/doctoolchain:v2.0.2)
+Find more detailed info in Github: [docToolchain/docker-image](https://github.com/docToolchain/docker-image)
+
+Just run the local script `doctoolchain.sh` and pass your Confluence credentials:
+* `./doctoolchain.sh publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+
 ### Maven Reference Documentation
 For further reference, please consider the following sections:
 
