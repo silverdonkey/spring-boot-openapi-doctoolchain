@@ -31,23 +31,26 @@ From your command line:
 * * go to http://localhost:8080/entity/all
 
 * Dockerfile-doc-builder: 
-* * uses openjdk:8-jre-alpine and docToolchain 2.x 
+* * uses openjdk:13-jdk-alpine and docToolchain v2.0.2 
 * * installs libs to allow generating and publishing PlantUML diagrams 
-* `docker build --no-cache . -t builder-alpine-doctoolchain:2.0.0 -f Dockerfile-doc-builder`
+* `docker build --no-cache . -t builder-alpine-doctoolchain:2.0.2 -f Dockerfile-doc-builder`
 
-### Run docToolchain-publishToConfluence locally using Docker (builder-alpine-doctoolchain:2.0.0 image)
-Preconditions: 
-* the directory under `/full-path-to-your-service-repo` must contain a valid docToolchain Config.groovy
+### Run docToolchain-publishToConfluence locally using Docker (builder-alpine-doctoolchain:2.0.2 image)
+Preconditions:
 * Confluence credentials with R/W-access
 
-Then from your command line run the command: 
-* `docker run -it --rm -v "/full-path-to-your-service-repo":/source builder-alpine-doctoolchain:2.0.0 doctoolchain /source publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+Then from your command line run the command (you can override -PinputPath=src/docs -PmainConfigFile=Config.groovy)
+* `docker run -it --rm --entrypoint /bin/bash -v ${PWD}:/project builder-alpine-doctoolchain:2.0.2 -c "doctoolchain /project publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+OR
+Just run the local script `my-doctoolchain.sh` (you can override -PinputPath=src/docs -PmainConfigFile=Config.groovy) and pass your Confluence credentials:
+* `./my-doctoolchain.sh publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+
 
 ### Run docToolchain-publishToConfluence locally using docToolchain's own Docker image (rdmueller/doctoolchain:v2.0.2)
 Find more detailed info in Github: [docToolchain/docker-image](https://github.com/docToolchain/docker-image)
 
-Just run the local script `doctoolchain.sh` and pass your Confluence credentials:
-* `./doctoolchain.sh publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+Just run the local script `doctoolchain.sh` (you can override -PinputPath=src/docs -PmainConfigFile=Config.groovy) and pass your Confluence credentials:
+* `./doctoolchain.sh publishToConfluence -PinputPath=src/docs -PmainConfigFile=Config.groovy -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
 
 ### Maven Reference Documentation
 For further reference, please consider the following sections:

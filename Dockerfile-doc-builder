@@ -1,18 +1,49 @@
 FROM openjdk:13-jdk-alpine
 
+# see https://github.com/docker-library/openjdk/issues/73
+ENV LC_CTYPE en_US.UTF-8
+
+RUN addgroup -S dtcgroup && adduser -S dtcuser -G dtcgroup
+
 # configure system
-RUN apk update
-RUN apk add --no-cache bash vim git graphviz fontconfig fontconfig-dev msttcorefonts-installer ttf-dejavu
+RUN echo "add needed tools" && \
+    apk update && \
+    apk add --no-cache bash vim git graphviz fontconfig fontconfig-dev msttcorefonts-installer ttf-dejavu
 
-ARG DOC_TOOLCHAIN_HOME=/tmp/docToolchain
+SHELL ["/bin/bash", "-c"]
 
-RUN git clone --recursive https://github.com/docToolchain/docToolchain.git ${DOC_TOOLCHAIN_HOME}
-RUN cd ${DOC_TOOLCHAIN_HOME} && rm -rf .git && rm -rf resources/asciidoctor-reveal.js/.git && rm -rf resources/reveal.js/.git
+USER dtcuser
+WORKDIR /home/dtcuser
+ENV HOME=/home/dtcuser
 
-ENV PATH "${DOC_TOOLCHAIN_HOME}/bin:$PATH"
+ENV GRADLE_USER_HOME=/home/dtcuser/.gradle
+
+RUN git clone --branch ng https://github.com/docToolchain/docToolchain.git && \
+    cd docToolchain && \
+    # checkout specific version
+    git fetch --tags && \
+    git checkout v2.0.2 && \
+    git submodule update -i && \
+    # remove .git folders
+    rm -rf `find -type d -name .git` && \
+    umask g+w && \
+    ./gradlew tasks && \
+    ./gradlew dependencies && \
+    chmod -R o=u $GRADLE_USER_HOME && \
+    chmod -R g=u $GRADLE_USER_HOME && \
+    rm -r $GRADLE_USER_HOME/daemon && \
+    chmod -R o=u $HOME
+
+ENV PATH "/home/dtcuser/docToolchain/bin:$PATH"
 
 RUN echo $PATH
 
-RUN cd ${DOC_TOOLCHAIN_HOME} && ./gradlew init && ./gradlew wrapper
+USER dtcuser
+
+WORKDIR /project
+
+VOLUME /project
+
+ENTRYPOINT /bin/bash
 
 
