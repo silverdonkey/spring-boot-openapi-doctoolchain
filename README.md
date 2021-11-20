@@ -40,7 +40,7 @@ Preconditions:
 * Confluence credentials with R/W-access
 
 Then from your command line run the command (you can override -PinputPath=src/docs -PmainConfigFile=Config.groovy)
-* `docker run -it --rm --entrypoint /bin/bash -v ${PWD}:/project builder-alpine-doctoolchain:2.0.2 -c "doctoolchain /project publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
+* `docker run -it --rm --entrypoint /bin/bash -v ${PWD}:/project builder-alpine-doctoolchain:2.0.2 -c "doctoolchain . publishToConfluence -PconfluenceUser='your-confluence-username' -PconfluencePass='your-confluence-api-token' && exit"`
 OR
 Just run the local script `my-doctoolchain.sh` (you can override -PinputPath=src/docs -PmainConfigFile=Config.groovy) and pass your Confluence credentials:
 * `./my-doctoolchain.sh publishToConfluence -PconfluenceUser="your-confluence-username" -PconfluencePass="your-confluence-api-token"`
