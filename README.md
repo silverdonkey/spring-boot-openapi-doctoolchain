@@ -1,7 +1,7 @@
 # Demo Integrated docToolchain 
 
 This demo project consist of
-* Spring Boot (v2.4.5) Service (OpenJDK-1.8, Maven 3.8.3)
+* Spring Boot (v2.4.5) Service
 * OpenAPI definition for the Spring Boot Service `src/docs/service-api.yaml` 
 * Asciidoc API documentation `src/docs/service-api.adoc` includes the OpenAPI (yaml) definition
 * OpenAPI definition for the Petstore example service to demonstrate the JSON format `src/docs/petstore-api.json`
